@@ -1,1 +1,69 @@
 # Campus_Management_System
+## run command for linux
+```shell
+javac -d out $(find src -name "*.java")
+java -cp out com.campus.app.Main
+```
+
+## run command for windows
+```shell
+javac -d out src\com\campus\model\Student.java src\com\campus\service\StudentService.java  src\com\campus\app\Main.java
+java -cp out com.campus.app.Main
+```
+
+## jdk-javaversion
+```shell
+javac -version
+java -version
+```
+
+## my system info
+```shell
+openjdk version "17.0.16" 2024-09-16
+OpenJDK Runtime Environment (build 17.0.16+9-LTS)
+OpenJDK 64-Bit Server VM (build 17.0.16+9-LTS, mixed mode, sharing)
+```
+jdk --> java development kit
+jre --> java runtime environment
+jvm --> java virtual machine
+
+data types
+primitive --> byte short int long float double boolean char
+non-primitive --> String array
+
+array utils
+java.util.Arrays-->toString,sort,binarySearch,equals,fill,copyOf,copyOfRange
+
+
+method typesParveenParveen
+no params and no return
+no params and with return
+with params and no return
+with params and with return
+
+
+
+method overloading:
+same method name different parameters
+displayStudentInfo()
+displayStudentInfo(boolean showMarks)
+
+4 oop pillars
+encapsulation
+inheritance
+polymorphism
+abstraction
+
+encapsulation-->data hiding-->private-->getters and setters
+inheritance-->is a relationship-->extends-->super keyword
+polymorphism-->many forms-->method overloading,method overriding
+  --methods overloading
+  --methods multilevel inheritance --> A extends B extends C -->A
+  --methods multi-stage inheritance --> A extends B extends C -->C
+  --methods multiple inheritance --> A extends B and C -->A
+  --methods hybrid inheritance--> multiple + multilevel + hierarchical
+  --methods hierarchical inheritance --> A extends B and A extends C -->A and B,A and C
+  --methods cyclic inheritance --> A extends B and B extends A -->Compile time error
+abstraction-->hiding implementation details-->abstract class,interface-->contracts to implement methods to achieve multiple implementations
+
+error --> compile time(checked errors),runtime error(unchecked errors while runtime execution),logical error(programmer error, while compiling code it runs but gives wrong output),syntax error(errors in code grammar)
