@@ -27,15 +27,15 @@ jdk --> java development kit
 jre --> java runtime environment
 jvm --> java virtual machine
 
-data types
+1.data types
 primitive --> byte short int long float double boolean char
 non-primitive --> String array
 
-array utils
+2.array utils
 java.util.Arrays-->toString,sort,binarySearch,equals,fill,copyOf,copyOfRange
 
 
-method typesParveenParveen
+3.method types
 no params and no return
 no params and with return
 with params and no return
@@ -48,7 +48,7 @@ same method name different parameters
 displayStudentInfo()
 displayStudentInfo(boolean showMarks)
 
-4 oop pillars
+4.oop pillars
 encapsulation
 inheritance
 polymorphism

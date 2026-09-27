@@ -1,6 +1,6 @@
 package com.campus.model;
 
-public class ScholarshipStudent extends Student{
+public class ScholarshipStudent extends Student {
 
     private double scholarshipPercentage;
 
@@ -15,9 +15,18 @@ public class ScholarshipStudent extends Student{
     public void setScholarshipPercentage(double scholarshipPercentage) {
         this.scholarshipPercentage = scholarshipPercentage;
     }
-
     
-    
-
-    
+    @Override
+    public void studentType() {
+        System.out.println("Scholarship Student");
+    }  
+    @Override
+    public void displayStudentInfo() {
+        super.displayStudentInfo();
+        System.out.println("Scholarship Percentage: " + scholarshipPercentage);
+    } 
+    @Override
+    public void displayStudentInfo(boolean showMarks) {
+        super.displayStudentInfo(showMarks);
+    }
 }

@@ -74,6 +74,7 @@ public abstract class Student {
             System.out.println("Marks: " + java.util.Arrays.toString(marks));
         }
     }
+    
     //abstract method
     public abstract void studentType();
     
