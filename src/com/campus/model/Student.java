@@ -1,6 +1,8 @@
 package com.campus.model;
 
-public abstract class Student {
+import com.campus.contract.StudentOperations;
+
+public abstract class Student  implements  StudentOperations {
     //Encapsulation - data hiding
     // instance variables
     private int studentid;
@@ -77,6 +79,9 @@ public abstract class Student {
     
     //abstract method
     public abstract void studentType();
+
+    //interface methods
+    
     
     // static method-belongs to class, not to object
     public static void displayStudentCount() {
