@@ -1,13 +1,25 @@
 # Campus_Management_System
-## run command for linux
+
+> 📖 **Windows 11 Users:** See the complete step-by-step setup and verification guide in [WINDOWS_INSTALLATION_GUIDE.md](WINDOWS_INSTALLATION_GUIDE.md).
+
+## Web Application (Maven + Jetty EE10)
 ```shell
-javac -d out $(find src -name "*.java")
+# Run embedded Jetty web server (Port 8080)
+mvn jetty:run
+```
+- Access Students List: `http://localhost:8080/students`
+- Add Student Form: `http://localhost:8080/student.html`
+
+## Console Application (src1)
+### run command for linux
+```shell
+javac -d out $(find src1 -name "*.java")
 java -cp out com.campus.app.Main
 ```
 
-## run command for windows
+### run command for windows
 ```shell
-javac -d out src\com\campus\model\Student.java src\com\campus\service\StudentService.java  src\com\campus\app\Main.java
+javac -d out src1\com\campus\model\*.java src1\com\campus\service\*.java src1\com\campus\contract\*.java src1\com\campus\app\Main.java
 java -cp out com.campus.app.Main
 ```
 

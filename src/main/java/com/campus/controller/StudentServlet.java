@@ -30,6 +30,7 @@ public class StudentServlet extends HttpServlet {
             out.println("<li>" + student + "</li>");
         }
         out.println("</ul>");
+        out.print("<a href=\"/student.html\">Add Student</a>");
         out.println("</body>");
         out.println("</html>");
     }
