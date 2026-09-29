@@ -1,5 +1,7 @@
 package com.campus.controller;
 
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -38,12 +40,10 @@ public class StudentServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws IOException {
+
         String name = request.getParameter("name");
         String course = request.getParameter("course");
         studentService.addStudent(name, course);
         response.sendRedirect("/students");
-        
     }
-
-    
 }
