@@ -14,7 +14,7 @@ import com.campus.services.StudentService;
 public class StudentServlet extends HttpServlet {
 
     private final StudentService studentService = new StudentService();
-
+    //Read operation
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) 
             throws IOException, ServletException {
@@ -30,8 +30,26 @@ public class StudentServlet extends HttpServlet {
             throws IOException {
 
         String name = request.getParameter("name");
-        String course = request.getParameter("course");
-        studentService.addStudent(name, course);
+        String department = request.getParameter("depart    ment");
+        int age = Integer.parseInt(request.getParameter("age"));
+        studentService.addStudent(name, department, age);
+        response.sendRedirect("/students");
+    }
+    @Override
+    public void doPut(HttpServletRequest request, HttpServletResponse response) 
+            throws IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        String name = request.getParameter("name");
+        String department = request.getParameter("department");
+        int age = Integer.parseInt(request.getParameter("age"));
+        studentService.updateStudent(id, name, department, age);
+        response.sendRedirect("/students");
+    }
+    @Override
+    public void doDelete(HttpServletRequest request, HttpServletResponse response) 
+            throws IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        studentService.deleteStudent(id);
         response.sendRedirect("/students");
     }
 }
