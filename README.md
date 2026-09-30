@@ -1,6 +1,7 @@
 # Campus_Management_System
 
 > 📖 **Windows 11 Users:** See the complete step-by-step setup and verification guide in [WINDOWS_INSTALLATION_GUIDE.md](WINDOWS_INSTALLATION_GUIDE.md).
+> 🐘 **Database Setup:** Looking to set up PostgreSQL and pgAdmin? See [POSTGRES_PGADMIN_SETUP.md](POSTGRES_PGADMIN_SETUP.md).
 
 ## Web Application (Maven + Jetty EE10)
 ```shell
