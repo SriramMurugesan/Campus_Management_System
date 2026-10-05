@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Student</title>
 </head>
 <body>
-    <h1>Add Student</h1>
-    <form action="/students" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="course">Course:</label>
-        <input type="text" id="course" name="course"><br><br>
-        <input type="submit" value="Add Student">
-    </form>
-    <a href="/students">Add Student</a>
+
+<h1>Add Student</h1>
+
+<form action="/students" method="post">
+    <input type="hidden" name="action" value="add">
+
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label>Age:</label>
+    <input type="number" name="age" required>
+    <br><br>
+
+    <label>Department ID:</label>
+    <input type="number" name="departmentId" required>
+    <br><br>
+
+    <button type="submit">Add Student</button>
+</form>
+
+<br>
+<a href="/students">Back to Students</a>
+
 </body>
 </html>

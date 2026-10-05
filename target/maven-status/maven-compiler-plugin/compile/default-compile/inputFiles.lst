@@ -1,6 +1,10 @@
 /home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/controller/StudentServlet.java
 /home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/util/DBConnection.java
 /home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/dao/StudentDAO.java
+/home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/util/JPAUtil.java
+/home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/model/Department.java
+/home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/dao/DepartmentJPADAO.java
+/home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/dao/StudentJPADAO.java
 /home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/controller/SessionServlet.java
 /home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/filter/LoggingFilter.java
 /home/billa/Sriram_repos/Campus_Management_System/src/main/java/com/campus/model/Student.java
