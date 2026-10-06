@@ -1,4 +1,32 @@
+# Build artifacts
 target
+**/target
+
+# Java class files
 *.class
+**/classes/**/*.class 
+
+# Log files
 *.log
+**/logs
+
+# IDE settings
 .vscode
+.idea
+
+# Maven
+**/target
+**/build
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/pom.xml.versionsNext
+
+# Gradle
+**/build
+.gradle
+
+# Other
+*.out
+*.orig
